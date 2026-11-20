@@ -28,3 +28,4 @@
 1. قم بتثبيت المكتبات المطلوبة:
    ```bash
    pip install pandas matplotlib mplsoccer streamlit
+   ![لوحة التحكم](Figure_1.png)
