@@ -12,7 +12,7 @@ st.markdown("اختر لاعبين من القائمة لمقارنة أدائه
 # تحميل البيانات (يتم تخزينها مؤقتاً لتسريع الموقع)
 @st.cache_data
 def load_data():
-    url = "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3869685.json"
+    url = "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/3788741.json"
     df = pd.DataFrame(requests.get(url).json())
     # استخراج أسماء اللاعبين المتاحين
     players = df['player'].dropna().apply(lambda x: x['name']).unique()
